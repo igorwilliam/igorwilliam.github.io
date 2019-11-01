@@ -1,4 +1,9 @@
 .App {
+  background-color: black;  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
   text-align: center;
 }
 
@@ -6,18 +11,31 @@
   /*   animation: App-logo-spin infinite 20s linear; */
   /* height: 40vmin; */
   height: 70vmin;
+  margin-right: 1rem;
   pointer-events: none;
 }
+
 .App-header {
-  background-color: black;
+  /* background-color: black; */
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
   -webkit-font-smoothing: antialiased !important;
+}
+
+@media (max-width: 500px) {
+  .App-header {
+    display: flex;
+    flex-direction: column;
+  }
+  .App-logo {
+    margin-bottom: 1rem;
+    pointer-events: none;
+  }
 }
 
 .App-link {
